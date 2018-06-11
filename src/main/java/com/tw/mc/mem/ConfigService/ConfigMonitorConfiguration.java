@@ -12,6 +12,9 @@ import org.springframework.context.annotation.Profile;
 @Import(RabbitAutoConfiguration.class)
 public class ConfigMonitorConfiguration {
 
-	
+	@Bean
+	public GitlabPropertyPathNotificationExtractor gitlabPropertyPathNotificationExtractor() {
+	  return new GitlabPropertyPathNotificationExtractor();
+	}
 }
 

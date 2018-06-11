@@ -15,8 +15,5 @@ public class ConfigServiceApplication {
 		SpringApplication.run(ConfigServiceApplication.class, args);
 	}
 	
-	@Bean
-	public GitlabPropertyPathNotificationExtractor gitlabPropertyPathNotificationExtractor() {
-	  return new GitlabPropertyPathNotificationExtractor();
-	}
+	
 }
